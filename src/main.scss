@@ -1,0 +1,84 @@
+:root {
+  --color1: #a7bcff;
+  --color2: #5d5b8d;
+  --color3: #7b96ec;
+  --color4: #8da4f1;
+}
+
+body {
+  margin: 0;
+}
+
+.formContainer {
+  background-color: var(--color1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .formWrapper {
+    background-color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .logo {
+      color: var(--color1);
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .title {
+      color: var(--color1);
+      font-size: 12px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        padding: 15px;
+        border: none;
+        width: 250px;
+        border-bottom: 1px solid var(--color1);
+
+        &::placeholder {
+          color: rgb(175, 175, 175);
+        }
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--color4);
+        cursor: pointer;
+
+        img {
+          width: 32px;
+        }
+      }
+
+      button {
+        background-color: var(--color3);
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+    }
+
+    p {
+      color: var(--color2);
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  }
+}

@@ -113,7 +113,7 @@ const SignUp = () => {
           </label>
           <button>Sign Up</button>
         </form>
-        <p>You do have an account? Login</p>
+        <p>You do have an account? Sign In</p>
       </div>
     </div>
   );
